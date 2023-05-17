@@ -1,0 +1,706 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY bee_products_new "http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/user/ontologies/2023/4/bee_products/"
+     xml:base="http://www.semanticweb.org/user/ontologies/2023/4/bee_products/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:bee_products_new="http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#hasColor -->
+
+    <owl:ObjectProperty rdf:about="&bee_products_new;hasColor">
+        <rdfs:domain rdf:resource="&bee_products_new;bee_product"/>
+        <rdfs:range rdf:resource="&bee_products_new;color"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#hasSize -->
+
+    <owl:ObjectProperty rdf:about="&bee_products_new;hasSize">
+        <rdfs:domain rdf:resource="&bee_products_new;bee_product"/>
+        <rdfs:range rdf:resource="&bee_products_new;size"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#hasState -->
+
+    <owl:ObjectProperty rdf:about="&bee_products_new;hasState">
+        <rdfs:domain rdf:resource="&bee_products_new;bee_product"/>
+        <rdfs:range rdf:resource="&bee_products_new;state_of_aggregation"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#madeBy -->
+
+    <owl:ObjectProperty rdf:about="&bee_products_new;madeBy">
+        <rdfs:range rdf:resource="&bee_products_new;bee"/>
+        <rdfs:domain rdf:resource="&bee_products_new;bee_product"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#usedIn -->
+
+    <owl:ObjectProperty rdf:about="&bee_products_new;usedIn">
+        <rdfs:range rdf:resource="&bee_products_new;apllication_area"/>
+        <rdfs:domain rdf:resource="&bee_products_new;bee_product"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <owl:ObjectProperty rdf:about="&owl;topObjectProperty"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#apllication_area -->
+
+    <owl:Class rdf:about="&bee_products_new;apllication_area"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#bee -->
+
+    <owl:Class rdf:about="&bee_products_new;bee"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#bee_brood -->
+
+    <owl:Class rdf:about="&bee_products_new;bee_brood">
+        <rdfs:subClassOf rdf:resource="&bee_products_new;bee_product"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#bee_pollen -->
+
+    <owl:Class rdf:about="&bee_products_new;bee_pollen">
+        <rdfs:subClassOf rdf:resource="&bee_products_new;bee_product"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#bee_product -->
+
+    <owl:Class rdf:about="&bee_products_new;bee_product"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#bee_venom -->
+
+    <owl:Class rdf:about="&bee_products_new;bee_venom">
+        <rdfs:subClassOf rdf:resource="&bee_products_new;bee_product"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#beeswax -->
+
+    <owl:Class rdf:about="&bee_products_new;beeswax">
+        <rdfs:subClassOf rdf:resource="&bee_products_new;bee_product"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#chitozan -->
+
+    <owl:Class rdf:about="&bee_products_new;chitozan">
+        <rdfs:subClassOf rdf:resource="&bee_products_new;bee_product"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#color -->
+
+    <owl:Class rdf:about="&bee_products_new;color"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#honey -->
+
+    <owl:Class rdf:about="&bee_products_new;honey">
+        <rdfs:subClassOf rdf:resource="&bee_products_new;bee_product"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#perga -->
+
+    <owl:Class rdf:about="&bee_products_new;perga">
+        <rdfs:subClassOf rdf:resource="&bee_products_new;bee_product"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#propolis -->
+
+    <owl:Class rdf:about="&bee_products_new;propolis">
+        <rdfs:subClassOf rdf:resource="&bee_products_new;bee_product"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#royal_jelly -->
+
+    <owl:Class rdf:about="&bee_products_new;royal_jelly">
+        <rdfs:subClassOf rdf:resource="&bee_products_new;bee_product"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#size -->
+
+    <owl:Class rdf:about="&bee_products_new;size"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#state_of_aggregation -->
+
+    <owl:Class rdf:about="&bee_products_new;state_of_aggregation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#wax_moth -->
+
+    <owl:Class rdf:about="&bee_products_new;wax_moth">
+        <rdfs:subClassOf rdf:resource="&bee_products_new;bee_product"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#acacia_honey -->
+
+    <owl:NamedIndividual rdf:about="&bee_products_new;acacia_honey">
+        <rdf:type rdf:resource="&bee_products_new;honey"/>
+        <bee_products_new:madeBy rdf:resource="&bee_products_new;food"/>
+        <bee_products_new:usedIn rdf:resource="&bee_products_new;medicine"/>
+        <bee_products_new:madeBy rdf:resource="&bee_products_new;worker_bee"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#bee_wax -->
+
+    <owl:NamedIndividual rdf:about="&bee_products_new;bee_wax">
+        <rdf:type rdf:resource="&bee_products_new;beeswax"/>
+        <bee_products_new:usedIn rdf:resource="&bee_products_new;cosmetology"/>
+        <bee_products_new:usedIn rdf:resource="&bee_products_new;industry"/>
+        <bee_products_new:madeBy rdf:resource="&bee_products_new;worker_bee"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#big -->
+
+    <owl:NamedIndividual rdf:about="&bee_products_new;big">
+        <rdf:type rdf:resource="&bee_products_new;size"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#brown -->
+
+    <owl:NamedIndividual rdf:about="&bee_products_new;brown">
+        <rdf:type rdf:resource="&bee_products_new;color"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#brown_bee_pollen -->
+
+    <owl:NamedIndividual rdf:about="&bee_products_new;brown_bee_pollen">
+        <rdf:type rdf:resource="&bee_products_new;bee_pollen"/>
+        <bee_products_new:hasColor rdf:resource="&bee_products_new;brown"/>
+        <bee_products_new:usedIn rdf:resource="&bee_products_new;food"/>
+        <bee_products_new:madeBy rdf:resource="&bee_products_new;worker_bee"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#buckwheat_honey -->
+
+    <owl:NamedIndividual rdf:about="&bee_products_new;buckwheat_honey">
+        <rdf:type rdf:resource="&bee_products_new;honey"/>
+        <bee_products_new:usedIn rdf:resource="&bee_products_new;cosmetology"/>
+        <bee_products_new:usedIn rdf:resource="&bee_products_new;food"/>
+        <bee_products_new:madeBy rdf:resource="&bee_products_new;worker_bee"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#chestnut_honey -->
+
+    <owl:NamedIndividual rdf:about="&bee_products_new;chestnut_honey">
+        <rdf:type rdf:resource="&bee_products_new;honey"/>
+        <bee_products_new:usedIn rdf:resource="&bee_products_new;cosmetology"/>
+        <bee_products_new:usedIn rdf:resource="&bee_products_new;food"/>
+        <bee_products_new:madeBy rdf:resource="&bee_products_new;worker_bee"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#cosmetology -->
+
+    <owl:NamedIndividual rdf:about="&bee_products_new;cosmetology">
+        <rdf:type rdf:resource="&bee_products_new;apllication_area"/>
+        <bee_products_new:usedIn rdf:resource="&bee_products_new;industry"/>
+        <bee_products_new:madeBy rdf:resource="&bee_products_new;worker_bee"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#day_old_brood -->
+
+    <owl:NamedIndividual rdf:about="&bee_products_new;day_old_brood">
+        <rdf:type rdf:resource="&bee_products_new;bee_brood"/>
+        <bee_products_new:usedIn rdf:resource="&bee_products_new;food"/>
+        <bee_products_new:madeBy rdf:resource="&bee_products_new;male_bee"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#dry_chitozan -->
+
+    <owl:NamedIndividual rdf:about="&bee_products_new;dry_chitozan">
+        <rdf:type rdf:resource="&bee_products_new;chitozan"/>
+        <bee_products_new:usedIn rdf:resource="&bee_products_new;food"/>
+        <bee_products_new:hasState rdf:resource="&bee_products_new;solid"/>
+        <bee_products_new:madeBy rdf:resource="&bee_products_new;worker_bee"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#extra_hive_posion -->
+
+    <owl:NamedIndividual rdf:about="&bee_products_new;extra_hive_posion">
+        <rdf:type rdf:resource="&bee_products_new;bee_venom"/>
+        <bee_products_new:usedIn rdf:resource="&bee_products_new;medicine"/>
+        <bee_products_new:madeBy rdf:resource="&bee_products_new;worker_bee"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#flower_perga -->
+
+    <owl:NamedIndividual rdf:about="&bee_products_new;flower_perga">
+        <rdf:type rdf:resource="&bee_products_new;perga"/>
+        <bee_products_new:usedIn rdf:resource="&bee_products_new;food"/>
+        <bee_products_new:usedIn rdf:resource="&bee_products_new;medicine"/>
+        <bee_products_new:madeBy rdf:resource="&bee_products_new;worker_bee"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#food -->
+
+    <owl:NamedIndividual rdf:about="&bee_products_new;food">
+        <rdf:type rdf:resource="&bee_products_new;apllication_area"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#forest_perga -->
+
+    <owl:NamedIndividual rdf:about="&bee_products_new;forest_perga">
+        <rdf:type rdf:resource="&bee_products_new;perga"/>
+        <bee_products_new:usedIn rdf:resource="&bee_products_new;food"/>
+        <bee_products_new:usedIn rdf:resource="&bee_products_new;medicine"/>
+        <bee_products_new:madeBy rdf:resource="&bee_products_new;worker_bee"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#green -->
+
+    <owl:NamedIndividual rdf:about="&bee_products_new;green">
+        <rdf:type rdf:resource="&bee_products_new;color"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#green_bee_pollen -->
+
+    <owl:NamedIndividual rdf:about="&bee_products_new;green_bee_pollen">
+        <rdf:type rdf:resource="&bee_products_new;bee_pollen"/>
+        <bee_products_new:usedIn rdf:resource="&bee_products_new;food"/>
+        <bee_products_new:hasColor rdf:resource="&bee_products_new;green"/>
+        <bee_products_new:madeBy rdf:resource="&bee_products_new;worker_bee"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#green_propolis -->
+
+    <owl:NamedIndividual rdf:about="&bee_products_new;green_propolis">
+        <rdf:type rdf:resource="&bee_products_new;propolis"/>
+        <bee_products_new:usedIn rdf:resource="&bee_products_new;food"/>
+        <bee_products_new:hasColor rdf:resource="&bee_products_new;green"/>
+        <bee_products_new:madeBy rdf:resource="&bee_products_new;worker_bee"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#industry -->
+
+    <owl:NamedIndividual rdf:about="&bee_products_new;industry">
+        <rdf:type rdf:resource="&bee_products_new;apllication_area"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#intra_hive_poison -->
+
+    <owl:NamedIndividual rdf:about="&bee_products_new;intra_hive_poison">
+        <rdf:type rdf:resource="&bee_products_new;bee_venom"/>
+        <bee_products_new:usedIn rdf:resource="&bee_products_new;medicine"/>
+        <bee_products_new:madeBy rdf:resource="&bee_products_new;worker_bee"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#large_wax_moth -->
+
+    <owl:NamedIndividual rdf:about="&bee_products_new;large_wax_moth">
+        <rdf:type rdf:resource="&bee_products_new;wax_moth"/>
+        <bee_products_new:hasSize rdf:resource="&bee_products_new;big"/>
+        <bee_products_new:usedIn rdf:resource="&bee_products_new;medicine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#linden_honey -->
+
+    <owl:NamedIndividual rdf:about="&bee_products_new;linden_honey">
+        <rdf:type rdf:resource="&bee_products_new;honey"/>
+        <bee_products_new:usedIn rdf:resource="&bee_products_new;food"/>
+        <bee_products_new:madeBy rdf:resource="&bee_products_new;worker_bee"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#liquid -->
+
+    <owl:NamedIndividual rdf:about="&bee_products_new;liquid">
+        <rdf:type rdf:resource="&bee_products_new;state_of_aggregation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#liquid_chitozan -->
+
+    <owl:NamedIndividual rdf:about="&bee_products_new;liquid_chitozan">
+        <rdf:type rdf:resource="&bee_products_new;chitozan"/>
+        <bee_products_new:usedIn rdf:resource="&bee_products_new;food"/>
+        <bee_products_new:hasState rdf:resource="&bee_products_new;liquid"/>
+        <bee_products_new:madeBy rdf:resource="&bee_products_new;worker_bee"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#liquid_royal_jelly -->
+
+    <owl:NamedIndividual rdf:about="&bee_products_new;liquid_royal_jelly">
+        <rdf:type rdf:resource="&bee_products_new;royal_jelly"/>
+        <bee_products_new:usedIn rdf:resource="&bee_products_new;cosmetology"/>
+        <bee_products_new:usedIn rdf:resource="&bee_products_new;food"/>
+        <bee_products_new:hasState rdf:resource="&bee_products_new;liquid"/>
+        <bee_products_new:usedIn rdf:resource="&bee_products_new;medicine"/>
+        <bee_products_new:madeBy rdf:resource="&bee_products_new;queen_bee"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#male_bee -->
+
+    <owl:NamedIndividual rdf:about="&bee_products_new;male_bee">
+        <rdf:type rdf:resource="&bee_products_new;bee"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#manufactoring_wax -->
+
+    <owl:NamedIndividual rdf:about="&bee_products_new;manufactoring_wax">
+        <rdf:type rdf:resource="&bee_products_new;beeswax"/>
+        <bee_products_new:usedIn rdf:resource="&bee_products_new;industry"/>
+        <bee_products_new:madeBy rdf:resource="&bee_products_new;worker_bee"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#medicine -->
+
+    <owl:NamedIndividual rdf:about="&bee_products_new;medicine">
+        <rdf:type rdf:resource="&bee_products_new;apllication_area"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#mountain_honey -->
+
+    <owl:NamedIndividual rdf:about="&bee_products_new;mountain_honey">
+        <rdf:type rdf:resource="&bee_products_new;honey"/>
+        <bee_products_new:usedIn rdf:resource="&bee_products_new;cosmetology"/>
+        <bee_products_new:usedIn rdf:resource="&bee_products_new;food"/>
+        <bee_products_new:madeBy rdf:resource="&bee_products_new;worker_bee"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#orange -->
+
+    <owl:NamedIndividual rdf:about="&bee_products_new;orange">
+        <rdf:type rdf:resource="&bee_products_new;color"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#orange_bee_pollen -->
+
+    <owl:NamedIndividual rdf:about="&bee_products_new;orange_bee_pollen">
+        <rdf:type rdf:resource="&bee_products_new;bee_pollen"/>
+        <bee_products_new:usedIn rdf:resource="&bee_products_new;food"/>
+        <bee_products_new:hasColor rdf:resource="&bee_products_new;orange"/>
+        <bee_products_new:madeBy rdf:resource="&bee_products_new;worker_bee"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#poplar_propolis -->
+
+    <owl:NamedIndividual rdf:about="&bee_products_new;poplar_propolis">
+        <rdf:type rdf:resource="&bee_products_new;propolis"/>
+        <bee_products_new:usedIn rdf:resource="&bee_products_new;medicine"/>
+        <bee_products_new:madeBy rdf:resource="&bee_products_new;worker_bee"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#printed_brood -->
+
+    <owl:NamedIndividual rdf:about="&bee_products_new;printed_brood">
+        <rdf:type rdf:resource="&bee_products_new;bee_brood"/>
+        <bee_products_new:usedIn rdf:resource="&bee_products_new;food"/>
+        <bee_products_new:madeBy rdf:resource="&bee_products_new;male_bee"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#purple -->
+
+    <owl:NamedIndividual rdf:about="&bee_products_new;purple">
+        <rdf:type rdf:resource="&bee_products_new;color"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#purple_bee_pollen -->
+
+    <owl:NamedIndividual rdf:about="&bee_products_new;purple_bee_pollen">
+        <rdf:type rdf:resource="&bee_products_new;bee_pollen"/>
+        <bee_products_new:usedIn rdf:resource="&bee_products_new;food"/>
+        <bee_products_new:hasColor rdf:resource="&bee_products_new;purple"/>
+        <bee_products_new:madeBy rdf:resource="&bee_products_new;worker_bee"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#queen_bee -->
+
+    <owl:NamedIndividual rdf:about="&bee_products_new;queen_bee">
+        <rdf:type rdf:resource="&bee_products_new;bee"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#red -->
+
+    <owl:NamedIndividual rdf:about="&bee_products_new;red">
+        <rdf:type rdf:resource="&bee_products_new;size"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#red_bee_pollen -->
+
+    <owl:NamedIndividual rdf:about="&bee_products_new;red_bee_pollen">
+        <rdf:type rdf:resource="&bee_products_new;bee_pollen"/>
+        <bee_products_new:usedIn rdf:resource="&bee_products_new;food"/>
+        <bee_products_new:hasColor rdf:resource="&bee_products_new;red"/>
+        <bee_products_new:madeBy rdf:resource="&bee_products_new;worker_bee"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#red_propolis -->
+
+    <owl:NamedIndividual rdf:about="&bee_products_new;red_propolis">
+        <rdf:type rdf:resource="&bee_products_new;propolis"/>
+        <bee_products_new:usedIn rdf:resource="&bee_products_new;medicine"/>
+        <bee_products_new:madeBy rdf:resource="&bee_products_new;worker_bee"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#small -->
+
+    <owl:NamedIndividual rdf:about="&bee_products_new;small">
+        <rdf:type rdf:resource="&bee_products_new;size"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#small_wax_moth -->
+
+    <owl:NamedIndividual rdf:about="&bee_products_new;small_wax_moth">
+        <rdf:type rdf:resource="&bee_products_new;wax_moth"/>
+        <bee_products_new:usedIn rdf:resource="&bee_products_new;medicine"/>
+        <bee_products_new:hasSize rdf:resource="&bee_products_new;small"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#solid -->
+
+    <owl:NamedIndividual rdf:about="&bee_products_new;solid">
+        <rdf:type rdf:resource="&bee_products_new;state_of_aggregation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#sweet_clover_honey -->
+
+    <owl:NamedIndividual rdf:about="&bee_products_new;sweet_clover_honey">
+        <rdf:type rdf:resource="&bee_products_new;honey"/>
+        <bee_products_new:usedIn rdf:resource="&bee_products_new;cosmetology"/>
+        <bee_products_new:usedIn rdf:resource="&bee_products_new;food"/>
+        <bee_products_new:madeBy rdf:resource="&bee_products_new;worker_bee"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#taiga_perga -->
+
+    <owl:NamedIndividual rdf:about="&bee_products_new;taiga_perga">
+        <rdf:type rdf:resource="&bee_products_new;perga"/>
+        <bee_products_new:usedIn rdf:resource="&bee_products_new;medicine"/>
+        <bee_products_new:madeBy rdf:resource="&bee_products_new;worker_bee"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#tea_tree_honey -->
+
+    <owl:NamedIndividual rdf:about="&bee_products_new;tea_tree_honey">
+        <rdf:type rdf:resource="&bee_products_new;honey"/>
+        <bee_products_new:usedIn rdf:resource="&bee_products_new;cosmetology"/>
+        <bee_products_new:usedIn rdf:resource="&bee_products_new;food"/>
+        <bee_products_new:madeBy rdf:resource="&bee_products_new;worker_bee"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#thick_royal_jelly -->
+
+    <owl:NamedIndividual rdf:about="&bee_products_new;thick_royal_jelly">
+        <rdf:type rdf:resource="&bee_products_new;royal_jelly"/>
+        <bee_products_new:usedIn rdf:resource="&bee_products_new;cosmetology"/>
+        <bee_products_new:usedIn rdf:resource="&bee_products_new;food"/>
+        <bee_products_new:hasState rdf:resource="&bee_products_new;liquid"/>
+        <bee_products_new:usedIn rdf:resource="&bee_products_new;medicine"/>
+        <bee_products_new:madeBy rdf:resource="&bee_products_new;queen_bee"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#wax_caps -->
+
+    <owl:NamedIndividual rdf:about="&bee_products_new;wax_caps">
+        <rdf:type rdf:resource="&bee_products_new;beeswax"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#wax_cuttings -->
+
+    <owl:NamedIndividual rdf:about="&bee_products_new;wax_cuttings">
+        <rdf:type rdf:resource="&bee_products_new;beeswax"/>
+        <bee_products_new:usedIn rdf:resource="&bee_products_new;industry"/>
+        <bee_products_new:madeBy rdf:resource="&bee_products_new;worker_bee"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/bee_products_new#worker_bee -->
+
+    <owl:NamedIndividual rdf:about="&bee_products_new;worker_bee">
+        <rdf:type rdf:resource="&bee_products_new;bee"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
